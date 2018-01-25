@@ -18,7 +18,7 @@
             </Label>
             <TableView fx:id="tableView" onMouseClicked="#userClickedOnTable" prefHeight="250.0" prefWidth="290.0">
               <columns>
-                <TableColumn fx:id="updateColumn" onEditCommit="#updateCellEvent" prefWidth="120.0" text="Version" />
+                <TableColumn fx:id="versionColumn" onEditCommit="#updateCellEvent" prefWidth="120.0" text="Version" />
                 <TableColumn fx:id="releasedColumn" onEditCommit="#releasedEvent" prefWidth="154.0" text="Released" />
                   <TableColumn fx:id="urlColumn" prefWidth="267.0" text="URL" />
               </columns>
