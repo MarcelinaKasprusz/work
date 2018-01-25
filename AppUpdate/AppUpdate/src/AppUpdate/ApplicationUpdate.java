@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class ApplicationUpdate {
 	String version;
-	Date update; 
+	Date released; 
 	String url; 
 	
-	ApplicationUpdate(String version, Date update, String url){
+	ApplicationUpdate(String version, Date released, String url){
 		this.version = version; 
-		this.update = update; 
+		this.released = released; 
 		this.url = url; 
 	}
 
@@ -21,12 +21,12 @@ public class ApplicationUpdate {
 		this.version = version;
 	}
 
-	public Date getUpdate() {
-		return update;
+	public Date getReleased() {
+		return released;
 	}
 
-	public void setUpdate(Date update) {
-		this.update = update;
+	public void setReleased(Date released) {
+		this.released = released;
 	}
 
 	public String getUrl() {

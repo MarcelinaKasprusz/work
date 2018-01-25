@@ -32,7 +32,7 @@ import java.util.Date;
 public class ExampleOfTableViewController implements Initializable {
 
 	 @FXML private TableView<ApplicationUpdate> tableView;
-	 @FXML private TableColumn<ApplicationUpdate, String> updateColumn;
+	 @FXML private TableColumn<ApplicationUpdate, String> versionColumn;
 	 @FXML private TableColumn<ApplicationUpdate, Date> releasedColumn;
 	 @FXML private TableColumn<ApplicationUpdate, String> urlColumn;
     
@@ -41,7 +41,7 @@ public class ExampleOfTableViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //set up the columns in the table
-        updateColumn.setCellValueFactory(new PropertyValueFactory<ApplicationUpdate, String>("version"));
+        versionColumn.setCellValueFactory(new PropertyValueFactory<ApplicationUpdate, String>("version"));
         releasedColumn.setCellValueFactory(new PropertyValueFactory<ApplicationUpdate, Date>("released"));
         urlColumn.setCellValueFactory(new PropertyValueFactory<ApplicationUpdate, String>("url"));
         
